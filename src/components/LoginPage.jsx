@@ -12,10 +12,12 @@ const LoginPage = () => {
   const [inputs, setInputs] = useState(initialValue);
   const [responseStatus, setResponseStatus] = useState(null);
   const navigate = useNavigate();
+  document.title = "Login";
   //   console.log("Hi");
   function handleFormChange(event) {
     const name = event.target.name;
     const value = event.target.value;
+    setResponseStatus(null);
     setInputs({ ...inputs, [name]: value });
   }
   function handleSubmission(event) {
@@ -42,7 +44,6 @@ const LoginPage = () => {
           "accessCredentials",
           JSON.stringify(accessCredentials)
         );
-        setResponseStatus(null);
         navigate(`/${response.data.username}`);
       } catch (error) {
         setResponseStatus(error.response.data.message);

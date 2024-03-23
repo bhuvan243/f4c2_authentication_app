@@ -12,6 +12,7 @@ const ProfilePage = () => {
   const { id } = JSON.parse(localStorage.getItem("accessCredentials"));
   const params = useParams();
   const navigate = useNavigate();
+  document.title = "Profile";
   // console.log(params.userid);
   if (params.userid !== userData.username) {
     navigate("/error");
