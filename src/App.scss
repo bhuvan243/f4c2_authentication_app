@@ -1,0 +1,20 @@
+@import "material-icons/iconfont/material-icons.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("https://static6.depositphotos.com/1012327/630/i/450/depositphotos_6309646-stock-photo-sun-glare-in-the-clear.jpg")
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
