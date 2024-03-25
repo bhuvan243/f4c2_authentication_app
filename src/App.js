@@ -8,7 +8,7 @@ import NotFound from "./components/NotFound";
 
 export const Global = createContext();
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   const [userData, setUserData] = useState({});
   const initialValue = {
     theme: theme,

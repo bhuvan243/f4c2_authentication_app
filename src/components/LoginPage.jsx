@@ -63,7 +63,7 @@ const LoginPage = () => {
             id="username"
             name="username"
             placeholder=""
-            autoComplete="off"
+            // autoComplete="off"
           />
           <label htmlFor="username">Username</label>
         </div>

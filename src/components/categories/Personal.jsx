@@ -1,8 +1,8 @@
 import React from "react";
 
-const Personal = ({ userData }) => {
+const Personal = ({ userData, theme }) => {
   return (
-    <div className="category-box">
+    <div className={theme === "light" ? "category-box category-light" : "category-box category-dark"}>
       <ul>
         <li>Name : {`${userData.firstName} ${userData.lastName}`}</li>
         <li>Age : {userData.age} years old</li>
@@ -10,7 +10,7 @@ const Personal = ({ userData }) => {
         <li>Email : {userData.email}</li>
         <li>Phone : {userData.phone}</li>
         <li>DOB : {userData.birthDate}</li>
-        {/* <li>
+        <li>
           Address :
           <ul className="address-container">
             <li>{userData.address.address}</li>
@@ -18,7 +18,7 @@ const Personal = ({ userData }) => {
             <li>{userData.address.state}</li>
             <li>Postal Code : {userData.address.postalCode}</li>
           </ul>
-        </li> */}
+        </li>
         <li></li>
       </ul>
     </div>
